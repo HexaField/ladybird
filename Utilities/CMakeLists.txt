@@ -15,6 +15,7 @@ lagom_utility(dns SOURCES dns.cpp LIBS LibDNS LibMain LibTLS LibCrypto)
 if (ENABLE_GUI_TARGETS)
     lagom_utility(animation SOURCES animation.cpp LIBS LibGfx LibMain)
     lagom_utility(image SOURCES image.cpp LIBS LibGfx LibMain)
+    lagom_utility(headless-renderer SOURCES headless-renderer.cpp LIBS LibWeb LibGfx LibCore LibJS LibURL LibTextCodec LibUnicode LibCompress LibCrypto LibHTTP LibTLS LibRequests LibIPC LibThreading LibGC LibMain)
 endif()
 
 lagom_utility(test262-runner SOURCES test262-runner.cpp LIBS LibJS LibFileSystem LibGC)
